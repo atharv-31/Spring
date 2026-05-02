@@ -6,8 +6,7 @@
 
 	<!-- bean definitions here -->
 
-	<bean id="employee" class="com.bean.Employee"
-		autowire="constructor">
+	<bean id="employee" class="com.bean.Employee" autowire="constructor">
 		<property name="id" value="1"></property>
 		<property name="name" value="Shreyas"></property>
 		<property name="salary" value="158621"></property>

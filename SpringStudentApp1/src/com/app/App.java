@@ -16,6 +16,8 @@ public class App {
 		
 		AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
 		
+		System.out.println("----->"+context.getBean("student11"));
+		
 		StudentService service = 
 				(StudentService) context.getBean("studentServiceImpl");
 		
@@ -25,6 +27,8 @@ public class App {
 		
 		service.addStudent(student);service.addStudent(student1);
 		service.addStudent(student2);
+		
+//		System.out.println(service.getBean);
 		
 		System.out.println("is Avilable "+service.isAvailable(student));
 		
